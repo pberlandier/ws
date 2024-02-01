@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="runFormMapping" usingRuleflow="true" ruleflowName="Form mapping flow" targetRuleProjectName="annuity-form-mapping-rules">
+  <name>runFormMapping</name>
+  <uuid>2f3f77a5-22f5-4e84-81ae-467fc9af1aa5</uuid>
+  <referencedVariables variableName="cbu" variableSetName="parameters">
+    <variableSet href="../../../../../Western&amp;Southern/western-southern/annuity-ops-decisions/annuity-form-mapping-rules/rules/parameters.var#466bacb9-d246-401c-9dc8-b7c3314916d5"/>
+  </referencedVariables>
+  <referencedVariables variableName="state" variableSetName="parameters">
+    <variableSet href="../../../../../Western&amp;Southern/western-southern/annuity-ops-decisions/annuity-form-mapping-rules/rules/parameters.var#466bacb9-d246-401c-9dc8-b7c3314916d5"/>
+  </referencedVariables>
+  <referencedVariables variableName="forms" variableSetName="parameters" direction="OUT">
+    <variableSet href="../../../../../Western&amp;Southern/western-southern/annuity-ops-decisions/annuity-form-mapping-rules/rules/parameters.var#466bacb9-d246-401c-9dc8-b7c3314916d5"/>
+  </referencedVariables>
+  <ruleflow href="../../../../../Western&amp;Southern/western-southern/annuity-ops-decisions/annuity-form-mapping-rules/rules/Form%20mapping%20flow.rfl#23620479-77ba-46f5-82a8-b15d0834cd35"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="runFormMapping_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../../../../Western&amp;Southern/western-southern/annuity-ops-decisions/annuity-form-mapping-rules#876ca7d6-a441-4263-a895-d87935b281fc"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

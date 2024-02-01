@@ -1,0 +1,271 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/case-priority-rules//case-priority-xom"
+property uuid "36c6ac26-2724-4f7b-b880-a657b69bfb6f"
+package com.ws.odm.priority.model;
+
+
+public class Address
+{
+    public string address1;
+    public string address2;
+    public string address3;
+    public float addressId;
+    public string addressType;
+    public string city;
+    public string lastModifiedByName;
+    public string lastModifiedDate;
+    public float partyId;
+    public string state;
+    public string zip;
+    public Address();
+}
+
+public class Agreement
+{
+    public float agreementAmount;
+    public string agreementNumber;
+    public object applicationReceivedDate;
+    public string applicationSignedDate;
+    public string applicationType;
+    public string coreBusinessUnit;
+    public object custodianAccountFlag;
+    public object issueDate;
+    public string issueStateCode;
+    public string lastModifiedByName;
+    public string lastModifiedDate;
+    public object mailAgreementToType;
+    public object planCode;
+    public object planType;
+    public object policyMailingDate;
+    public string productName;
+    public object replacementFlag;
+    public string specialRelationshipName;
+    public Agreement();
+}
+
+public class Case
+{
+    public com.ws.odm.priority.model.Agreement agreement;
+    public string agreementInfo;
+    public string agreementInfoTemplate;
+    public string agreementNumber;
+    public object arrangements;
+    public com.ws.odm.priority.model.CaseFolder caseFolder;
+    public string caseFolderId;
+    public com.ws.odm.priority.model.CaseMetaInformation caseMetaInformation;
+    public java.util.List enhancedNigos domain 0,* class object;
+    public java.util.List fundAllocations domain 0,* class com.ws.odm.priority.model.FundAllocation;
+    public java.util.List includedFormWizardSteps domain 0,* class com.ws.odm.priority.model.IncludedFormWizardStep;
+    public java.util.List parties domain 0,* class com.ws.odm.priority.model.Party;
+    public java.util.List producers domain 0,* class com.ws.odm.priority.model.Producer;
+    public java.util.List transfersAggObj domain 0,* class com.ws.odm.priority.model.TransfersAggObj;
+    public Case();
+}
+
+public class CaseFolder
+{
+    public object actuarialAuthorizationCode;
+    public object advanceCommisionFlag;
+    public string agreementNumber;
+    public object annuityAdministratorName;
+    public float anticipatedPremiumAmount;
+    public object applicationValidationStatus;
+    public string caseFolderId;
+    public string caseIdentifier;
+    public object caseStatusCode;
+    public string caseType;
+    public string createDate;
+    public object creatorName;
+    public object currentTaxYearContributionAmount;
+    public object cvcProductCheckText;
+    public object declineReasonText;
+    public object declineStartDate;
+    public object fiduciaryRequiredFlag;
+    public object fixedPricingRate;
+    public object incomeSourceProductOption;
+    public object newBusinessLoadRate;
+    public object pasForceAllErrosFlag;
+    public object paymentAmount;
+    public object postIssueReceivedDate;
+    public object postIssueRequirementStatusText;
+    public object postIssueSentDate;
+    public object previousTaxYearContributionAmount;
+    public object producerValidationStatusText;
+    public object qualityControlAnalystName;
+    public object qualityControlDate;
+    public object qualityReviewStatusText;
+    public object rateEffectiveDate;
+    public object reg60ScanDate;
+    public object retainCommisionFlag;
+    public object salesDeskAssociateIdentifer;
+    public object suitabilityAssociateDeclineReasonText;
+    public object suitabilityAssociateIdentifer;
+    public object suitabilityReviewCompleteDate;
+    public object suitabilityReviewCreateDate;
+    public object suitabilityReviewStatus;
+    public object suitabliltyReviewFlag;
+    public object thirdPartyCertifiedFlag;
+    public object totalCommissionsWithheldAmount;
+    public object totalNetAmountReceived;
+    public CaseFolder();
+}
+
+public class CaseMetaInformation
+{
+    public string agreementNumber;
+    public boolean allocationsApplicable;
+    public string applicationSignedDate;
+    public string applicationType;
+    public string caseFolderId;
+    public object caseStatusCode;
+    public string caseType;
+    public string coreBusinessUnit;
+    public string issueStateCode;
+    public string nationalProducerNumber;
+    public string ownerFirstName;
+    public string ownerLastName;
+    public string producer1FirstName;
+    public string producer1LastName;
+    public string productName;
+    public string productType;
+    public CaseMetaInformation();
+}
+
+public class FundAllocation
+{
+    public string agreementNumber;
+    public float allocationId;
+    public float allocationPercentRate;
+    public string fundName;
+    public string lastModifiedByName;
+    public string lastModifiedDate;
+    public boolean stoFlag;
+    public object surrenderGuaranteePeriodQuantity;
+    public object systematicTransferOptionPercentRate;
+    public FundAllocation();
+}
+
+public class IncludedFormWizardStep
+{
+    public string formName;
+    public float formOrder;
+    public java.util.List wizardSteps domain 0,* class com.ws.odm.priority.model.WizardStep;
+    public IncludedFormWizardStep();
+}
+
+public class Party
+{
+    public java.util.List addresses domain 0,* class com.ws.odm.priority.model.Address;
+    public object lastModifiedByName;
+    public object lastModifiedDate;
+    public com.ws.odm.priority.model.Party__1 party;
+    public Party();
+}
+
+public class Party__1
+{
+    public string agreementNumber;
+    public string annuitantRelationshipText;
+    public float beneficiarySplitRate;
+    public string birthDate;
+    public string citizenshipCountryName;
+    public object clientAliasFlag;
+    public object clientEditableFlag;
+    public object clientId;
+    public object customDbKey;
+    public string emailAddressText;
+    public string firstName;
+    public string genderId;
+    public string lastModifiedByName;
+    public string lastModifiedDate;
+    public string lastName;
+    public object middleName;
+    public object ownerEntityType;
+    public string ownerRelationshipText;
+    public float partyId;
+    public string partyRoleCode;
+    public string partyType;
+    public string phoneNumber;
+    public object residencyLength;
+    public string taxIdentificationNumber;
+    public boolean tinFlag;
+    public object uniquePartyNumber;
+    public object usPermanentResidentFlag;
+    public Party__1();
+}
+
+public class Producer
+{
+    public object address1;
+    public object address2;
+    public boolean advancedCommissionsFlg;
+    public string caseFolderId;
+    public string cityName;
+    public object customDbKey;
+    public object distributionType;
+    public object emailAddress;
+    public string firmId;
+    public string firstName;
+    public string lastModifiedByName;
+    public string lastModifiedDate;
+    public string lastName;
+    public object middleName;
+    public string nationalProducerNumber;
+    public object phoneNumber;
+    public object producerCheckDtos;
+    public float producerId;
+    public float producerNumber;
+    public object producerSplitRate;
+    public boolean retainedCommissionsFlg;
+    public string stateCode;
+    public object wholesalerCode;
+    public string zipCode;
+    public Producer();
+}
+
+public class Response
+{
+    public int priority;
+    public java.util.List reasons domain 0,* class string;
+    public Response();
+    public void adjustPriority(int arg1, string arg2);
+}
+
+public class TransfersAggObj
+{
+    public float amountReceived;
+    public object autoResolveInd;
+    public string caseFolderId;
+    public string companyName;
+    public string contributionSourceType;
+    public float costBasisAmount;
+    public string dateReceived;
+    public object dateSurrendered;
+    public java.util.List documentList domain 0,* class object;
+    public object extCompanyCntrctId;
+    public object extCompanyFaxId;
+    public object extCompanyFaxNumberValue;
+    public string fundStatusCode;
+    public string fundType;
+    public object replacementDateTime;
+    public object selectedSurrenderCompany;
+    public float transferId;
+    public TransfersAggObj();
+}
+
+public class WizardStep
+{
+    public string caseFolderId;
+    public string formType;
+    public boolean missing;
+    public float order;
+    public string productComboTxt;
+    public boolean required;
+    public float stepInstanceId;
+    public string stepName;
+    public float stepPacketReferenceId;
+    public string toolTipPdfLocation;
+    public WizardStep();
+}
+

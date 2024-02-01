@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>transfers assessment</name>
+  <uuid>b659ba4b-ca01-44af-9538-4b6e6ffef258</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+	set 'not yet received' to the transfers of case where the date received of each transfer is null ;
+	set count to the number of elements in 'not yet received' ;
+if
+	count is 0
+then
+	adjust priority of 'case response' by 5 with reason "All transfers have been received" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

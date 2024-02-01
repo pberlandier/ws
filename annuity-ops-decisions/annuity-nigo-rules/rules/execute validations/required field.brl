@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>required field</name>
+  <uuid>03d4985c-534b-4d3a-9bc2-bf6138e80b78</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+	set 'validation' to a validation item in the items of validations 
+		where the NIGO id of this validation item is "required" ;
+if
+	the field value of validation is null
+then
+	add NIGO item to response with the unique id of validation and 
+		message "This is a required field." ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

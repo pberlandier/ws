@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>variables</name>
+  <uuid>39324cbb-0710-4d89-befc-93a18d22d2c4</uuid>
+  <variables name="validations" type="com.ws.odm.nigo.model.ValidationList" initialValue="new com.ws.odm.nigo.model.ValidationList()" verbalization="validations"/>
+</ilog.rules.studio.model.base:VariableSet>

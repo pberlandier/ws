@@ -1,0 +1,380 @@
+<b2x:translation xmlns:b2x="http://schemas.ilog.com/JRules/1.3/Translation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.ilog.com/JRules/1.3/Translation ilog/rules/schemas/1_3/b2x.xsd">
+    <id>0ea971b9-449a-4df1-818f-521da5876163</id>
+    <lang>ARL</lang>
+    <class>
+        <businessName>com.ws.odm.nigo.model.Form</businessName>
+        <constructor>
+            <parameter type="java.lang.String"/>
+            <parameter type="java.util.List"/>
+            <body language="arl"><![CDATA[
+            com.ws.odm.nigo.model.Form form = new com.ws.odm.nigo.model.Form();
+form.setId(id);
+form.setFields(fields);
+return form;
+            ]]></body>
+        </constructor>
+    </class>
+    <class>
+        <businessName>com.ws.odm.nigo.model.ValidationItem</businessName>
+        <method>
+            <name>dateValue</name>
+            <body language="arl"><![CDATA[
+            return com.ws.odm.nigo.validation.Helper.asDate(value);
+            ]]></body>
+        </method>
+        <method>
+            <name>integerValue</name>
+            <body language="arl"><![CDATA[
+            return com.ws.odm.nigo.validation.Helper.asInteger(value);
+            ]]></body>
+        </method>
+    </class>
+    <class>
+        <businessName>com.ws.odm.nigo.model.ValidationList</businessName>
+        <method>
+            <name>addItemVirtual</name>
+            <parameter type="com.ws.odm.nigo.model.Form"/>
+            <parameter type="java.lang.String"/>
+            <parameter type="java.lang.String"/>
+            <parameter type="com.ws.odm.nigo.type.NIGO"/>
+            <parameter type="int"/>
+            <body language="arl"><![CDATA[
+            this.addItem(form, sectionId, fieldId, (java.lang.String)nigoId, uniqueId);
+            ]]></body>
+        </method>
+    </class>
+    <class>
+        <businessName>com.ws.odm.nigo.type.NIGO</businessName>
+        <executionName>java.lang.Object</executionName>
+        <attribute>
+            <name>aba_invalid</name>
+            <getter language="irl"><![CDATA[
+            return "aba_invalid";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>age_72</name>
+            <getter language="irl"><![CDATA[
+            return "age_72";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>agent_split_100</name>
+            <getter language="irl"><![CDATA[
+            return "agent_split_100";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>blank</name>
+            <getter language="irl"><![CDATA[
+            return "blank";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>choice1</name>
+            <getter language="irl"><![CDATA[
+            return "choice1";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>choice2</name>
+            <getter language="irl"><![CDATA[
+            return "choice2";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>cont_alloc_perc_100</name>
+            <getter language="irl"><![CDATA[
+            return "cont_alloc_perc_100";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>cont_limit_65k</name>
+            <getter language="irl"><![CDATA[
+            return "cont_limit_65k";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>date_14_27</name>
+            <getter language="irl"><![CDATA[
+            return "date_14_27";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>do_not_select</name>
+            <getter language="irl"><![CDATA[
+            return "do_not_select";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>empty</name>
+            <getter language="irl"><![CDATA[
+            return "empty";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>end_of_month</name>
+            <getter language="irl"><![CDATA[
+            return "end_of_month";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>entity_owner_sole_primary</name>
+            <getter language="irl"><![CDATA[
+            return "entity_owner_sole_primary";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>form_incomplete</name>
+            <getter language="irl"><![CDATA[
+            return "form_incomplete";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>illegible</name>
+            <getter language="irl"><![CDATA[
+            return "illegible";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>invalid_glwb</name>
+            <getter language="irl"><![CDATA[
+            return "invalid_glwb";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>invalid_state</name>
+            <getter language="irl"><![CDATA[
+            return "invalid_state";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>irs_catch_cont_limt</name>
+            <getter language="irl"><![CDATA[
+            return "irs_catch_cont_limt";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>irs_cont_limit</name>
+            <getter language="irl"><![CDATA[
+            return "irs_cont_limit";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>match_client</name>
+            <getter language="irl"><![CDATA[
+            return "match_client";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>match_eo</name>
+            <getter language="irl"><![CDATA[
+            return "match_eo";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>mr_age_range</name>
+            <getter language="irl"><![CDATA[
+            return "mr_age_range";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>mr_age_range_mr_ok</name>
+            <getter language="irl"><![CDATA[
+            return "mr_age_range_mr_ok";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>must_be_entity</name>
+            <getter language="irl"><![CDATA[
+            return "must_be_entity";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>must_be_swd</name>
+            <getter language="irl"><![CDATA[
+            return "must_be_swd";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>no_self_ann_not_own</name>
+            <getter language="irl"><![CDATA[
+            return "no_self_ann_not_own";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>nonqual_0_75</name>
+            <getter language="irl"><![CDATA[
+            return "nonqual_0_75";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>nonqual_76_89</name>
+            <getter language="irl"><![CDATA[
+            return "nonqual_76_89";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>not_14_27_index</name>
+            <getter language="irl"><![CDATA[
+            return "not_14_27_index";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>not_valid</name>
+            <getter language="irl"><![CDATA[
+            return "not_valid";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>not_valid_with_swd</name>
+            <getter language="irl"><![CDATA[
+            return "not_valid_with_swd";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>o_match_a</name>
+            <getter language="irl"><![CDATA[
+            return "o_match_a";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>one_field_req</name>
+            <getter language="irl"><![CDATA[
+            return "one_field_req";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>one_pt_req</name>
+            <getter language="irl"><![CDATA[
+            return "one_pt_req";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>only_one</name>
+            <getter language="irl"><![CDATA[
+            return "only_one";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>own_must_be_ann_4_plan</name>
+            <getter language="irl"><![CDATA[
+            return "own_must_be_ann_4_plan";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>p_alloc_perc_100</name>
+            <getter language="irl"><![CDATA[
+            return "p_alloc_perc_100";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>plan_type</name>
+            <getter language="irl"><![CDATA[
+            return "plan_type";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>pobox</name>
+            <getter language="irl"><![CDATA[
+            return "pobox";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>prev_cont_after_tax_day</name>
+            <getter language="irl"><![CDATA[
+            return "prev_cont_after_tax_day";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>q_plan_no_joint_o</name>
+            <getter language="irl"><![CDATA[
+            return "q_plan_no_joint_o";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>qual_0_75</name>
+            <getter language="irl"><![CDATA[
+            return "qual_0_75";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>qual_76_89</name>
+            <getter language="irl"><![CDATA[
+            return "qual_76_89";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>rate_options_total_100</name>
+            <getter language="irl"><![CDATA[
+            return "rate_options_total_100";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>rel_not_self_ind_own</name>
+            <getter language="irl"><![CDATA[
+            return "rel_not_self_ind_own";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>required</name>
+            <getter language="irl"><![CDATA[
+            return "required";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>select_1_opt</name>
+            <getter language="irl"><![CDATA[
+            return "select_1_opt";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>self_4_eo</name>
+            <getter language="irl"><![CDATA[
+            return "self_4_eo";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>spouse_10_younger</name>
+            <getter language="irl"><![CDATA[
+            return "spouse_10_younger";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>start_app_plus_30</name>
+            <getter language="irl"><![CDATA[
+            return "start_app_plus_30";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>unavailable</name>
+            <getter language="irl"><![CDATA[
+            return "unavailable";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>val_SSN</name>
+            <getter language="irl"><![CDATA[
+            return "val_SSN";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>val_date</name>
+            <getter language="irl"><![CDATA[
+            return "val_date";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>val_numeric</name>
+            <getter language="irl"><![CDATA[
+            return "val_numeric";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>val_zip</name>
+            <getter language="irl"><![CDATA[
+            return "val_zip";
+            ]]></getter>
+        </attribute>
+    </class>
+</b2x:translation>

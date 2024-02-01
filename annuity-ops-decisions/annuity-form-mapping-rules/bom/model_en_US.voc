@@ -1,0 +1,126 @@
+# Vocabulary Properties
+uuid = cc790958-37a3-4644-9bb5-dad8bd52f49e
+
+# com.ws.odm.mapping.InputCBU
+com.ws.odm.mapping.InputCBU#concept.label = input CBU
+com.ws.odm.mapping.InputCBU.CLIC#phrase.action = set the CLIC of {this} to {CLIC}
+com.ws.odm.mapping.InputCBU.CLIC#phrase.navigation = {CLIC} of {this}
+
+# com.ws.odm.mapping.InputCBU.CLICType
+com.ws.odm.mapping.InputCBU.CLICType#concept.label = CLICType
+com.ws.odm.mapping.InputCBU.CLICType.AD#instance.label = AD
+com.ws.odm.mapping.InputCBU.CLICType.AM#instance.label = AM
+com.ws.odm.mapping.InputCBU.CLICType.PP#instance.label = PP
+com.ws.odm.mapping.InputCBU.IFS#phrase.action = set the IFS of {this} to {IFS}
+com.ws.odm.mapping.InputCBU.IFS#phrase.navigation = {IFS} of {this}
+
+# com.ws.odm.mapping.InputCBU.IFSType
+com.ws.odm.mapping.InputCBU.IFSType#concept.label = IFSType
+com.ws.odm.mapping.InputCBU.IFSType.ACL#instance.label = ACL
+com.ws.odm.mapping.InputCBU.IFSType.HZ#instance.label = HZ
+com.ws.odm.mapping.InputCBU.IFSType.MR#instance.label = MR
+com.ws.odm.mapping.InputCBU.IFSType.SS#instance.label = SS
+com.ws.odm.mapping.InputCBU.IFSType.SmSel#instance.label = SmSel
+com.ws.odm.mapping.InputCBU.INT#phrase.action = set the INT of {this} to {INT}
+com.ws.odm.mapping.InputCBU.INT#phrase.navigation = {INT} of {this}
+
+# com.ws.odm.mapping.InputCBU.INTType
+com.ws.odm.mapping.InputCBU.INTType#concept.label = INTType
+com.ws.odm.mapping.InputCBU.INTType.ACH#instance.label = ACH
+com.ws.odm.mapping.InputCBU.INTType.AQ#instance.label = AQ
+com.ws.odm.mapping.InputCBU.INTType.IS#instance.label = IS
+com.ws.odm.mapping.InputCBU.INTType.IX#instance.label = IX
+com.ws.odm.mapping.InputCBU.INTType.JM#instance.label = JM
+com.ws.odm.mapping.InputCBU.INTType.MV#instance.label = MV
+com.ws.odm.mapping.InputCBU.INTType.NM#instance.label = NM
+com.ws.odm.mapping.InputCBU.INTType.PN#instance.label = PN
+com.ws.odm.mapping.InputCBU.INTType.SP#instance.label = SP
+com.ws.odm.mapping.InputCBU.INTType.Select#instance.label = Select
+com.ws.odm.mapping.InputCBU.INTType.VR#instance.label = VR
+com.ws.odm.mapping.InputCBU.NAT#phrase.action = set the NAT of {this} to {NAT}
+com.ws.odm.mapping.InputCBU.NAT#phrase.navigation = {NAT} of {this}
+
+# com.ws.odm.mapping.InputCBU.NAType
+com.ws.odm.mapping.InputCBU.NAType#concept.label = NAType
+com.ws.odm.mapping.InputCBU.NAType.ACH#instance.label = ACH
+com.ws.odm.mapping.InputCBU.NAType.AQ#instance.label = AQ
+com.ws.odm.mapping.InputCBU.NAType.IS#instance.label = IS
+com.ws.odm.mapping.InputCBU.NAType.MV#instance.label = MV
+com.ws.odm.mapping.InputCBU.NAType.NM#instance.label = NM
+com.ws.odm.mapping.InputCBU.NAType.PN#instance.label = PN
+com.ws.odm.mapping.InputCBU.NAType.SP#instance.label = SP
+com.ws.odm.mapping.InputCBU.NAType.SS#instance.label = SS
+com.ws.odm.mapping.InputCBU.NAType.SmSel#instance.label = SmSel
+com.ws.odm.mapping.InputCBU.NAType.VR#instance.label = VR
+
+# com.ws.odm.mapping.MappedForm
+com.ws.odm.mapping.MappedForm#concept.label = mapped form
+com.ws.odm.mapping.MappedForm.consolidatedFormName#phrase.action = set the consolidated form name of {this} to {consolidated form name}
+com.ws.odm.mapping.MappedForm.consolidatedFormName#phrase.navigation = {consolidated form name} of {this}
+com.ws.odm.mapping.MappedForm.formName#phrase.action = set the form name of {this} to {form name}
+com.ws.odm.mapping.MappedForm.formName#phrase.navigation = {form name} of {this}
+com.ws.odm.mapping.MappedForm.indexFormId#phrase.action = set the index form id of {this} to {index form id}
+com.ws.odm.mapping.MappedForm.indexFormId#phrase.navigation = {index form id} of {this}
+com.ws.odm.mapping.MappedForm.paperFormId#phrase.action = set the paper form id of {this} to {paper form id}
+com.ws.odm.mapping.MappedForm.paperFormId#phrase.navigation = {paper form id} of {this}
+
+# com.ws.odm.mapping.MappedForms
+com.ws.odm.mapping.MappedForms#concept.label = mapped forms
+com.ws.odm.mapping.MappedForms.addElement(java.lang.String,java.lang.String,java.lang.String,java.lang.String)#phrase.action = {this}.addElement({0}, {1}, {2}, {3})
+com.ws.odm.mapping.MappedForms.print()#phrase.action = print {this}
+
+# com.ws.odm.mapping.StateType
+com.ws.odm.mapping.StateType#concept.label = state type
+com.ws.odm.mapping.StateType.AK#instance.label = AK
+com.ws.odm.mapping.StateType.AL#instance.label = AL
+com.ws.odm.mapping.StateType.AR#instance.label = AR
+com.ws.odm.mapping.StateType.AZ#instance.label = AZ
+com.ws.odm.mapping.StateType.CA#instance.label = CA
+com.ws.odm.mapping.StateType.CO#instance.label = CO
+com.ws.odm.mapping.StateType.CT#instance.label = CT
+com.ws.odm.mapping.StateType.DC#instance.label = DC
+com.ws.odm.mapping.StateType.DE#instance.label = DE
+com.ws.odm.mapping.StateType.FL#instance.label = FL
+com.ws.odm.mapping.StateType.GA#instance.label = GA
+com.ws.odm.mapping.StateType.GU#instance.label = GU
+com.ws.odm.mapping.StateType.HI#instance.label = HI
+com.ws.odm.mapping.StateType.IA#instance.label = IA
+com.ws.odm.mapping.StateType.ID#instance.label = ID
+com.ws.odm.mapping.StateType.IL#instance.label = IL
+com.ws.odm.mapping.StateType.IN#instance.label = IN
+com.ws.odm.mapping.StateType.KS#instance.label = KS
+com.ws.odm.mapping.StateType.KY#instance.label = KY
+com.ws.odm.mapping.StateType.LA#instance.label = LA
+com.ws.odm.mapping.StateType.MA#instance.label = MA
+com.ws.odm.mapping.StateType.MD#instance.label = MD
+com.ws.odm.mapping.StateType.ME#instance.label = ME
+com.ws.odm.mapping.StateType.MI#instance.label = MI
+com.ws.odm.mapping.StateType.MN#instance.label = MN
+com.ws.odm.mapping.StateType.MO#instance.label = MO
+com.ws.odm.mapping.StateType.MS#instance.label = MS
+com.ws.odm.mapping.StateType.MT#instance.label = MT
+com.ws.odm.mapping.StateType.NC#instance.label = NC
+com.ws.odm.mapping.StateType.ND#instance.label = ND
+com.ws.odm.mapping.StateType.NE#instance.label = NE
+com.ws.odm.mapping.StateType.NH#instance.label = NH
+com.ws.odm.mapping.StateType.NJ#instance.label = NJ
+com.ws.odm.mapping.StateType.NM#instance.label = NM
+com.ws.odm.mapping.StateType.NV#instance.label = NV
+com.ws.odm.mapping.StateType.NY#instance.label = NY
+com.ws.odm.mapping.StateType.OH#instance.label = OH
+com.ws.odm.mapping.StateType.OK#instance.label = OK
+com.ws.odm.mapping.StateType.OR#instance.label = OR
+com.ws.odm.mapping.StateType.PA#instance.label = PA
+com.ws.odm.mapping.StateType.PR#instance.label = PR
+com.ws.odm.mapping.StateType.RI#instance.label = RI
+com.ws.odm.mapping.StateType.SC#instance.label = SC
+com.ws.odm.mapping.StateType.SD#instance.label = SD
+com.ws.odm.mapping.StateType.TN#instance.label = TN
+com.ws.odm.mapping.StateType.TX#instance.label = TX
+com.ws.odm.mapping.StateType.UT#instance.label = UT
+com.ws.odm.mapping.StateType.VA#instance.label = VA
+com.ws.odm.mapping.StateType.VT#instance.label = VT
+com.ws.odm.mapping.StateType.WA#instance.label = WA
+com.ws.odm.mapping.StateType.WI#instance.label = WI
+com.ws.odm.mapping.StateType.WV#instance.label = WV
+com.ws.odm.mapping.StateType.WY#instance.label = WY

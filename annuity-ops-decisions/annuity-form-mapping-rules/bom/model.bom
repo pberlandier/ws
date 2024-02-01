@@ -1,0 +1,210 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/annuity-form-mapping-rules//annuity-ops-xom"
+property uuid "aacb295f-929a-4d8f-82c7-61ece50cdc02"
+package com.ws.odm.mapping;
+
+
+public class InputCBU
+{
+
+    static public final class CLICType
+            extends java.lang.Enum
+    {
+        domain {static AM, static AD, static PP}
+        public static final readonly com.ws.odm.mapping.InputCBU.CLICType AD;
+        public static final readonly com.ws.odm.mapping.InputCBU.CLICType AM;
+        public static final readonly com.ws.odm.mapping.InputCBU.CLICType PP;
+        public static com.ws.odm.mapping.InputCBU.CLICType valueOf(string arg);
+        public static com.ws.odm.mapping.InputCBU.CLICType[] values();
+    }
+
+    static public final class IFSType
+            extends java.lang.Enum
+    {
+        domain {static ACL, static HZ, static MR, static SS, static SmSel}
+        public static final readonly com.ws.odm.mapping.InputCBU.IFSType ACL;
+        public static final readonly com.ws.odm.mapping.InputCBU.IFSType HZ;
+        public static final readonly com.ws.odm.mapping.InputCBU.IFSType MR;
+        public static final readonly com.ws.odm.mapping.InputCBU.IFSType SS;
+        public static final readonly com.ws.odm.mapping.InputCBU.IFSType SmSel;
+        public static com.ws.odm.mapping.InputCBU.IFSType valueOf(string arg);
+        public static com.ws.odm.mapping.InputCBU.IFSType[] values();
+    }
+
+    static public final class INTType
+            extends java.lang.Enum
+    {
+        domain {static IX, static JM, static AQ, static MV, static NM, static SP, static IS, static Select, static ACH, static PN, static VR}
+        public static final readonly com.ws.odm.mapping.InputCBU.INTType ACH;
+        public static final readonly com.ws.odm.mapping.InputCBU.INTType AQ;
+        public static final readonly com.ws.odm.mapping.InputCBU.INTType IS;
+        public static final readonly com.ws.odm.mapping.InputCBU.INTType IX;
+        public static final readonly com.ws.odm.mapping.InputCBU.INTType JM;
+        public static final readonly com.ws.odm.mapping.InputCBU.INTType MV;
+        public static final readonly com.ws.odm.mapping.InputCBU.INTType NM;
+        public static final readonly com.ws.odm.mapping.InputCBU.INTType PN;
+        public static final readonly com.ws.odm.mapping.InputCBU.INTType SP;
+        public static final readonly com.ws.odm.mapping.InputCBU.INTType Select;
+        public static final readonly com.ws.odm.mapping.InputCBU.INTType VR;
+        public static com.ws.odm.mapping.InputCBU.INTType valueOf(string arg);
+        public static com.ws.odm.mapping.InputCBU.INTType[] values();
+    }
+
+    static public final class NAType
+            extends java.lang.Enum
+    {
+        domain {static SS, static AQ, static MV, static NM, static SP, static IS, static ACH, static PN, static VR, static SmSel}
+        public static final readonly com.ws.odm.mapping.InputCBU.NAType ACH;
+        public static final readonly com.ws.odm.mapping.InputCBU.NAType AQ;
+        public static final readonly com.ws.odm.mapping.InputCBU.NAType IS;
+        public static final readonly com.ws.odm.mapping.InputCBU.NAType MV;
+        public static final readonly com.ws.odm.mapping.InputCBU.NAType NM;
+        public static final readonly com.ws.odm.mapping.InputCBU.NAType PN;
+        public static final readonly com.ws.odm.mapping.InputCBU.NAType SP;
+        public static final readonly com.ws.odm.mapping.InputCBU.NAType SS;
+        public static final readonly com.ws.odm.mapping.InputCBU.NAType SmSel;
+        public static final readonly com.ws.odm.mapping.InputCBU.NAType VR;
+        public static com.ws.odm.mapping.InputCBU.NAType valueOf(string arg);
+        public static com.ws.odm.mapping.InputCBU.NAType[] values();
+    }
+    public com.ws.odm.mapping.InputCBU.CLICType CLIC;
+    public com.ws.odm.mapping.InputCBU.IFSType IFS;
+    public com.ws.odm.mapping.InputCBU.INTType INT;
+    public com.ws.odm.mapping.InputCBU.NAType NAT;
+    public InputCBU();
+}
+
+public class MappedForm
+{
+    public string consolidatedFormName;
+    public string formName;
+    public string indexFormId;
+    public string paperFormId;
+    public MappedForm();
+}
+
+public class MappedForms
+{
+    public java.util.List elements domain 0,* class com.ws.odm.mapping.MappedForm;
+    public MappedForms();
+    public void addElement(string arg1, string arg2, string arg3, string arg4);
+    public void print();
+}
+
+public final class StateType
+        extends java.lang.Enum
+{
+    domain 
+    {
+        static AL,
+        static AK,
+        static AZ,
+        static AR,
+        static CA,
+        static CO,
+        static CT,
+        static DE,
+        static DC,
+        static FL,
+        static GA,
+        static HI,
+        static ID,
+        static IL,
+        static IN,
+        static IA,
+        static KS,
+        static KY,
+        static LA,
+        static ME,
+        static MD,
+        static MA,
+        static MI,
+        static MN,
+        static MS,
+        static MO,
+        static MT,
+        static NE,
+        static NV,
+        static NH,
+        static NJ,
+        static NM,
+        static NY,
+        static NC,
+        static ND,
+        static OH,
+        static OK,
+        static OR,
+        static PA,
+        static RI,
+        static SC,
+        static SD,
+        static TN,
+        static TX,
+        static UT,
+        static VT,
+        static VA,
+        static WA,
+        static WV,
+        static WI,
+        static WY,
+        static GU,
+        static PR
+    }
+    public static final readonly com.ws.odm.mapping.StateType AK;
+    public static final readonly com.ws.odm.mapping.StateType AL;
+    public static final readonly com.ws.odm.mapping.StateType AR;
+    public static final readonly com.ws.odm.mapping.StateType AZ;
+    public static final readonly com.ws.odm.mapping.StateType CA;
+    public static final readonly com.ws.odm.mapping.StateType CO;
+    public static final readonly com.ws.odm.mapping.StateType CT;
+    public static final readonly com.ws.odm.mapping.StateType DC;
+    public static final readonly com.ws.odm.mapping.StateType DE;
+    public static final readonly com.ws.odm.mapping.StateType FL;
+    public static final readonly com.ws.odm.mapping.StateType GA;
+    public static final readonly com.ws.odm.mapping.StateType GU;
+    public static final readonly com.ws.odm.mapping.StateType HI;
+    public static final readonly com.ws.odm.mapping.StateType IA;
+    public static final readonly com.ws.odm.mapping.StateType ID;
+    public static final readonly com.ws.odm.mapping.StateType IL;
+    public static final readonly com.ws.odm.mapping.StateType IN;
+    public static final readonly com.ws.odm.mapping.StateType KS;
+    public static final readonly com.ws.odm.mapping.StateType KY;
+    public static final readonly com.ws.odm.mapping.StateType LA;
+    public static final readonly com.ws.odm.mapping.StateType MA;
+    public static final readonly com.ws.odm.mapping.StateType MD;
+    public static final readonly com.ws.odm.mapping.StateType ME;
+    public static final readonly com.ws.odm.mapping.StateType MI;
+    public static final readonly com.ws.odm.mapping.StateType MN;
+    public static final readonly com.ws.odm.mapping.StateType MO;
+    public static final readonly com.ws.odm.mapping.StateType MS;
+    public static final readonly com.ws.odm.mapping.StateType MT;
+    public static final readonly com.ws.odm.mapping.StateType NC;
+    public static final readonly com.ws.odm.mapping.StateType ND;
+    public static final readonly com.ws.odm.mapping.StateType NE;
+    public static final readonly com.ws.odm.mapping.StateType NH;
+    public static final readonly com.ws.odm.mapping.StateType NJ;
+    public static final readonly com.ws.odm.mapping.StateType NM;
+    public static final readonly com.ws.odm.mapping.StateType NV;
+    public static final readonly com.ws.odm.mapping.StateType NY;
+    public static final readonly com.ws.odm.mapping.StateType OH;
+    public static final readonly com.ws.odm.mapping.StateType OK;
+    public static final readonly com.ws.odm.mapping.StateType OR;
+    public static final readonly com.ws.odm.mapping.StateType PA;
+    public static final readonly com.ws.odm.mapping.StateType PR;
+    public static final readonly com.ws.odm.mapping.StateType RI;
+    public static final readonly com.ws.odm.mapping.StateType SC;
+    public static final readonly com.ws.odm.mapping.StateType SD;
+    public static final readonly com.ws.odm.mapping.StateType TN;
+    public static final readonly com.ws.odm.mapping.StateType TX;
+    public static final readonly com.ws.odm.mapping.StateType UT;
+    public static final readonly com.ws.odm.mapping.StateType VA;
+    public static final readonly com.ws.odm.mapping.StateType VT;
+    public static final readonly com.ws.odm.mapping.StateType WA;
+    public static final readonly com.ws.odm.mapping.StateType WI;
+    public static final readonly com.ws.odm.mapping.StateType WV;
+    public static final readonly com.ws.odm.mapping.StateType WY;
+    public static com.ws.odm.mapping.StateType valueOf(string arg);
+    public static com.ws.odm.mapping.StateType[] values();
+}
+

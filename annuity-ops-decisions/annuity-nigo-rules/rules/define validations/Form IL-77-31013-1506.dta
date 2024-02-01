@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.dt:DecisionTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.dt="http://ilog.rules.studio/model/dt.ecore">
+  <name>Form IL-77-31013-1506</name>
+  <uuid>20605598-1077-40d4-9ae3-740c4f12e033</uuid>
+  <locale>en_US</locale>
+  <definition>
+<DT Version="7.0" xmlns="http://schemas.ilog.com/Rules/7.0/DecisionTable">
+  <Body>
+                <Properties>
+                    <Property Name="UI.MediaType"><![CDATA[Web]]></Property>
+                    <Property Name="RowOrdering"><![CDATA[Manual]]></Property>
+                </Properties>
+                <Preconditions>
+                    <Text><![CDATA[if the id of form is "IL-77-31013-1506"]]></Text>
+                </Preconditions>
+                <Structure>
+                    <ConditionDefinitions>
+                        <ConditionDefinition Id="C0">
+                            <Properties>
+                                <Property Name="Check.Gap" Type="xs:boolean"><![CDATA[false]]></Property>
+                                <Property Name="Check.Overlap" Type="xs:boolean"><![CDATA[false]]></Property>
+                            </Properties>
+                            <ExpressionDefinition>
+                                <Text><![CDATA[true is <a boolean>]]></Text>
+                            </ExpressionDefinition>
+                        </ConditionDefinition>
+                    </ConditionDefinitions>
+                    <ActionDefinitions>
+                        <ActionDefinition Id="A0">
+                            <ExpressionDefinition>
+                                <Text><![CDATA[add validation to validations with form form , section <a string> , field <a string> , NIGO <a com.ws.odm.nigo.type.NIGO> , unique id <a number>]]></Text>
+                            </ExpressionDefinition>
+                        </ActionDefinition>
+                    </ActionDefinitions>
+                </Structure>
+                <Contents>
+                    <Partition DefId="C0">
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S02-DISM"]]></Param>
+                                        <Param><![CDATA["rmd_option"]]></Param>
+                                        <Param><![CDATA[Required Field]]></Param>
+                                        <Param><![CDATA[1139]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S02-DISM"]]></Param>
+                                        <Param><![CDATA["spouse_rmd_name"]]></Param>
+                                        <Param><![CDATA[Required Field]]></Param>
+                                        <Param><![CDATA[1140]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S02-DISM"]]></Param>
+                                        <Param><![CDATA["spouse_rmd_name"]]></Param>
+                                        <Param><![CDATA[blank]]></Param>
+                                        <Param><![CDATA[1141]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S02-DISM"]]></Param>
+                                        <Param><![CDATA["spouse_rmd_last"]]></Param>
+                                        <Param><![CDATA[Required Field]]></Param>
+                                        <Param><![CDATA[1142]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S02-DISM"]]></Param>
+                                        <Param><![CDATA["spouse_rmd_last"]]></Param>
+                                        <Param><![CDATA[blank]]></Param>
+                                        <Param><![CDATA[1143]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S02-DISM"]]></Param>
+                                        <Param><![CDATA["spouse_rmd_dob"]]></Param>
+                                        <Param><![CDATA[Required Field]]></Param>
+                                        <Param><![CDATA[1145]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S02-DISM"]]></Param>
+                                        <Param><![CDATA["spouse_rmd_dob"]]></Param>
+                                        <Param><![CDATA[blank]]></Param>
+                                        <Param><![CDATA[1146]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S02-DISM"]]></Param>
+                                        <Param><![CDATA["spouse_rmd_dob"]]></Param>
+                                        <Param><![CDATA[val_date]]></Param>
+                                        <Param><![CDATA[1147]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S02-DISM"]]></Param>
+                                        <Param><![CDATA["spouse_rmd_dob"]]></Param>
+                                        <Param><![CDATA[spouse_10_younger]]></Param>
+                                        <Param><![CDATA[1149]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S02-DISM"]]></Param>
+                                        <Param><![CDATA["spouse_rmd_ssn"]]></Param>
+                                        <Param><![CDATA[Required Field]]></Param>
+                                        <Param><![CDATA[1150]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S02-DISM"]]></Param>
+                                        <Param><![CDATA["spouse_rmd_ssn"]]></Param>
+                                        <Param><![CDATA[blank]]></Param>
+                                        <Param><![CDATA[1151]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S02-DISM"]]></Param>
+                                        <Param><![CDATA["spouse_rmd_ssn"]]></Param>
+                                        <Param><![CDATA[val_SSN]]></Param>
+                                        <Param><![CDATA[1152]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S02-DISM"]]></Param>
+                                        <Param><![CDATA["rmd_option"]]></Param>
+                                        <Param><![CDATA[blank]]></Param>
+                                        <Param><![CDATA[2456]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["distribution_options"]]></Param>
+                                        <Param><![CDATA[Required Field]]></Param>
+                                        <Param><![CDATA[1154]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["distribution_options"]]></Param>
+                                        <Param><![CDATA[not_valid]]></Param>
+                                        <Param><![CDATA[1155]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["distribution_options"]]></Param>
+                                        <Param><![CDATA[invalid_glwb]]></Param>
+                                        <Param><![CDATA[1156]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["swd_start_date_cal_glwb"]]></Param>
+                                        <Param><![CDATA[val_date]]></Param>
+                                        <Param><![CDATA[1161]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["swd_start_date_cal_gmwb"]]></Param>
+                                        <Param><![CDATA[val_date]]></Param>
+                                        <Param><![CDATA[1161]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["swd_start_date_cal_index"]]></Param>
+                                        <Param><![CDATA[val_date]]></Param>
+                                        <Param><![CDATA[1161]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["swd_start_date_cal_rmd"]]></Param>
+                                        <Param><![CDATA[val_date]]></Param>
+                                        <Param><![CDATA[1161]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["swd_start_date_cal_glwb"]]></Param>
+                                        <Param><![CDATA[end_of_month]]></Param>
+                                        <Param><![CDATA[1162]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["swd_start_date_cal_gmwb"]]></Param>
+                                        <Param><![CDATA[end_of_month]]></Param>
+                                        <Param><![CDATA[1162]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["swd_start_date_cal_index"]]></Param>
+                                        <Param><![CDATA[end_of_month]]></Param>
+                                        <Param><![CDATA[1162]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["swd_start_date_cal_rmd"]]></Param>
+                                        <Param><![CDATA[end_of_month]]></Param>
+                                        <Param><![CDATA[1162]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["swd_start_date_cal_glwb"]]></Param>
+                                        <Param><![CDATA[start_app_plus_30]]></Param>
+                                        <Param><![CDATA[1163]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["swd_start_date_cal_gmwb"]]></Param>
+                                        <Param><![CDATA[start_app_plus_30]]></Param>
+                                        <Param><![CDATA[1163]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["swd_start_date_cal_index"]]></Param>
+                                        <Param><![CDATA[start_app_plus_30]]></Param>
+                                        <Param><![CDATA[1163]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["swd_start_date_cal_rmd"]]></Param>
+                                        <Param><![CDATA[start_app_plus_30]]></Param>
+                                        <Param><![CDATA[1163]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["swd_frequency"]]></Param>
+                                        <Param><![CDATA[Required Field]]></Param>
+                                        <Param><![CDATA[1164]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["swd_frequency_index"]]></Param>
+                                        <Param><![CDATA[Required Field]]></Param>
+                                        <Param><![CDATA[1164]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["swd_start_date_cal_rmd"]]></Param>
+                                        <Param><![CDATA[Required Field]]></Param>
+                                        <Param><![CDATA[1164]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["swd_start_date_cal_glwb"]]></Param>
+                                        <Param><![CDATA[not_14_27_index]]></Param>
+                                        <Param><![CDATA[1638]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["swd_start_date_cal_gmwb"]]></Param>
+                                        <Param><![CDATA[not_14_27_index]]></Param>
+                                        <Param><![CDATA[1638]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["swd_start_date_cal_index"]]></Param>
+                                        <Param><![CDATA[not_14_27_index]]></Param>
+                                        <Param><![CDATA[1638]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["swd_start_date_cal_rmd"]]></Param>
+                                        <Param><![CDATA[not_14_27_index]]></Param>
+                                        <Param><![CDATA[1638]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["swd_start_date_cal_glwb"]]></Param>
+                                        <Param><![CDATA[Age 72]]></Param>
+                                        <Param><![CDATA[2026]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["swd_start_date_cal_gmwb"]]></Param>
+                                        <Param><![CDATA[Age 72]]></Param>
+                                        <Param><![CDATA[2026]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["swd_start_date_cal_index"]]></Param>
+                                        <Param><![CDATA[Age 72]]></Param>
+                                        <Param><![CDATA[2026]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["swd_start_date_cal_rmd"]]></Param>
+                                        <Param><![CDATA[Age 72]]></Param>
+                                        <Param><![CDATA[2026]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["distribution_options"]]></Param>
+                                        <Param><![CDATA[not_valid_with_swd]]></Param>
+                                        <Param><![CDATA[2428]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S03-DISO"]]></Param>
+                                        <Param><![CDATA["distribution_options"]]></Param>
+                                        <Param><![CDATA[must_be_swd]]></Param>
+                                        <Param><![CDATA[2457]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S04-AUTH"]]></Param>
+                                        <Param><![CDATA["payment_type"]]></Param>
+                                        <Param><![CDATA[Required Field]]></Param>
+                                        <Param><![CDATA[1167]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S04-AUTH"]]></Param>
+                                        <Param><![CDATA["financial_institution_full_name"]]></Param>
+                                        <Param><![CDATA[Required Field]]></Param>
+                                        <Param><![CDATA[1170]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S04-AUTH"]]></Param>
+                                        <Param><![CDATA["financial_institution_full_name"]]></Param>
+                                        <Param><![CDATA[blank]]></Param>
+                                        <Param><![CDATA[1171]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S04-AUTH"]]></Param>
+                                        <Param><![CDATA["financial_institution_aba"]]></Param>
+                                        <Param><![CDATA[Required Field]]></Param>
+                                        <Param><![CDATA[1175]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S04-AUTH"]]></Param>
+                                        <Param><![CDATA["financial_institution_aba"]]></Param>
+                                        <Param><![CDATA[blank]]></Param>
+                                        <Param><![CDATA[1176]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S04-AUTH"]]></Param>
+                                        <Param><![CDATA["financial_institution_aba"]]></Param>
+                                        <Param><![CDATA[aba_invalid]]></Param>
+                                        <Param><![CDATA[1177]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S04-AUTH"]]></Param>
+                                        <Param><![CDATA["financial_institution_account_number"]]></Param>
+                                        <Param><![CDATA[Required Field]]></Param>
+                                        <Param><![CDATA[1181]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S04-AUTH"]]></Param>
+                                        <Param><![CDATA["financial_institution_account_number"]]></Param>
+                                        <Param><![CDATA[blank]]></Param>
+                                        <Param><![CDATA[1182]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S04-AUTH"]]></Param>
+                                        <Param><![CDATA["financial_institution_account_name_first"]]></Param>
+                                        <Param><![CDATA[Required Field]]></Param>
+                                        <Param><![CDATA[1187]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S04-AUTH"]]></Param>
+                                        <Param><![CDATA["financial_institution_account_name_first"]]></Param>
+                                        <Param><![CDATA[blank]]></Param>
+                                        <Param><![CDATA[1188]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S04-AUTH"]]></Param>
+                                        <Param><![CDATA["financial_institution_account_name_last"]]></Param>
+                                        <Param><![CDATA[Required Field]]></Param>
+                                        <Param><![CDATA[1192]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S04-AUTH"]]></Param>
+                                        <Param><![CDATA["financial_institution_account_name_last"]]></Param>
+                                        <Param><![CDATA[blank]]></Param>
+                                        <Param><![CDATA[1193]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S04-AUTH"]]></Param>
+                                        <Param><![CDATA["financial_rep_signature_chk"]]></Param>
+                                        <Param><![CDATA[Required Field]]></Param>
+                                        <Param><![CDATA[1206]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S04-AUTH"]]></Param>
+                                        <Param><![CDATA["financial_rep_signature_chk"]]></Param>
+                                        <Param><![CDATA[blank]]></Param>
+                                        <Param><![CDATA[1207]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S04-AUTH"]]></Param>
+                                        <Param><![CDATA["other_account_number"]]></Param>
+                                        <Param><![CDATA[blank]]></Param>
+                                        <Param><![CDATA[1612]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S04-AUTH"]]></Param>
+                                        <Param><![CDATA["financial_institution_account_number"]]></Param>
+                                        <Param><![CDATA[Numeric Value]]></Param>
+                                        <Param><![CDATA[1621]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S04-AUTH"]]></Param>
+                                        <Param><![CDATA["void_check_received_chk"]]></Param>
+                                        <Param><![CDATA[Required Field]]></Param>
+                                        <Param><![CDATA[3382]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S05-WITH"]]></Param>
+                                        <Param><![CDATA["plan_type"]]></Param>
+                                        <Param><![CDATA[unavailable]]></Param>
+                                        <Param><![CDATA[2020]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S06-CERT"]]></Param>
+                                        <Param><![CDATA["owner_signature_chk"]]></Param>
+                                        <Param><![CDATA[Required Field]]></Param>
+                                        <Param><![CDATA[1228]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S06-CERT"]]></Param>
+                                        <Param><![CDATA["owner_signature_date_cal"]]></Param>
+                                        <Param><![CDATA[Required Field]]></Param>
+                                        <Param><![CDATA[1231]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA["S06-CERT"]]></Param>
+                                        <Param><![CDATA["owner_signature_date_cal"]]></Param>
+                                        <Param><![CDATA[val_date]]></Param>
+                                        <Param><![CDATA[1232]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
+                </Contents>
+            </Body>
+  <Resources DefaultLocale="en_US">
+                <ResourceSet Locale="en_US">
+                    <Data Name="Definitions(C0)#HeaderText"><![CDATA[Is Active]]></Data>
+                    <Data Name="Definitions(A0)#Width"><![CDATA[1309]]></Data>
+                    <Data Name="Definitions(A0)[0]#HeaderText"><![CDATA[Section]]></Data>
+                    <Data Name="Definitions(A0)[1]#HeaderText"><![CDATA[Field]]></Data>
+                    <Data Name="Definitions(A0)#HeaderText"><![CDATA[Add Validation]]></Data>
+                    <Data Name="Definitions(A0)[2]#HeaderText"><![CDATA[NIGO Id]]></Data>
+                    <Data Name="Definitions(A0)[3]#HeaderText"><![CDATA[Unique Id]]></Data>
+                    <Data Name="Definitions(C0)#Width"><![CDATA[102]]></Data>
+                </ResourceSet>
+            </Resources>
+</DT>
+</definition>
+</ilog.rules.studio.model.dt:DecisionTable>

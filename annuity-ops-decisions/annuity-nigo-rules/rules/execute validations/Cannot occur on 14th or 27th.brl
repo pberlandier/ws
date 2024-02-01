@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Cannot occur on 14th or 27th</name>
+  <uuid>92e5c043-2ea3-45cc-a172-bc348a02d5b4</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+	set 'validation' to a validation item in the items of validations 
+		where the NIGO id of this validation item is "date_14_27" ;
+if
+	the day of the date value of validation is one of {14, 27 }
+then
+	add NIGO item to response with the unique id of validation and
+		message "Cannot occur on the 14th or 27th of any month." ;
+		
+		
+		
+		]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

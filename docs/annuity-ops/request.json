@@ -1,0 +1,20 @@
+{
+  "form": {
+    "id": "TEST-01",
+    "sections": {
+      "S02": {
+        "id": "S02",
+        "fields": {
+          "field2": "text"
+        }
+      },
+      "S04": {
+        "id": "S04",
+        "fields": {
+          "field1": "10000000"
+        }
+      }
+
+    }
+  }
+}

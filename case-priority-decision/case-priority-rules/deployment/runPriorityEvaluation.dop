@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="runPriorityEvaluation" usingRuleflow="true" ruleflowName="determine priority" targetRuleProjectName="case-priority-rules">
+  <name>runPriorityEvaluation</name>
+  <uuid>3e662e63-d840-422e-8f10-8cccb6da9d07</uuid>
+  <referencedVariables variableName="caseInfo" variableSetName="parameters">
+    <variableSet href="../../../../../Western&amp;Southern/odm-western-southern/case-priority-decision/case-priority-rules/rules/parameters.var#cc4fe9cb-8c21-45c1-8597-594fb1901160"/>
+  </referencedVariables>
+  <referencedVariables variableName="caseResponse" variableSetName="parameters" direction="OUT">
+    <variableSet href="../../../../../Western&amp;Southern/odm-western-southern/case-priority-decision/case-priority-rules/rules/parameters.var#cc4fe9cb-8c21-45c1-8597-594fb1901160"/>
+  </referencedVariables>
+  <ruleflow href="../../../../../Western&amp;Southern/odm-western-southern/case-priority-decision/case-priority-rules/rules/determine%20priority.rfl#02be789f-07ed-43d3-a712-f054d15986a7"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="runPriorityEvaluation_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../../../../Western&amp;Southern/odm-western-southern/case-priority-decision/case-priority-rules#d8864fb6-c59a-4e65-b44a-fa43d8003405"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

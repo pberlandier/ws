@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>empty</name>
+  <uuid>1d376933-5d0a-4dfd-a8f5-887a9d50ffcb</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+	set 'validation' to a validation item in the items of validations 
+		where the NIGO id of this validation item is "empty" ;
+if
+	the field value of validation is not null and
+	it is not true that the field value of validation is empty 
+then
+	add NIGO item to response with the unique id of validation and 
+		message "This field must be empty." ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

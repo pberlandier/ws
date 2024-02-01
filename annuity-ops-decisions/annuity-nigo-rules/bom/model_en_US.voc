@@ -1,0 +1,168 @@
+# Vocabulary Properties
+uuid = 0c5350d5-6a01-44e1-9a98-75443ce243e6
+
+# com.ws.odm.nigo.model.Form
+com.ws.odm.nigo.model.Form#concept.label = form
+com.ws.odm.nigo.model.Form.fields#phrase.action = set the fields of {this} to {field}
+com.ws.odm.nigo.model.Form.getFieldValue(java.lang.String,java.lang.String)#phrase.navigation = {this}.getFieldValue({0}, {1})
+com.ws.odm.nigo.model.Form.id#phrase.action = set the id of {this} to {id}
+com.ws.odm.nigo.model.Form.id#phrase.navigation = {id} of {this}
+com.ws.odm.nigo.model.Form.sections#phrase.action = set the sections of {this} to {section}
+com.ws.odm.nigo.model.Form.sections#phrase.navigation = {section} of {this}
+
+# com.ws.odm.nigo.model.NIGOItem
+com.ws.odm.nigo.model.NIGOItem#concept.label = NIGOItem
+com.ws.odm.nigo.model.NIGOItem.id#phrase.action = set the id of {this} to {id}
+com.ws.odm.nigo.model.NIGOItem.id#phrase.navigation = {id} of {this}
+com.ws.odm.nigo.model.NIGOItem.messageText#phrase.action = set the message text of {this} to {message text}
+com.ws.odm.nigo.model.NIGOItem.messageText#phrase.navigation = {message text} of {this}
+
+# com.ws.odm.nigo.model.NIGOList
+com.ws.odm.nigo.model.NIGOList#concept.label = NIGOList
+com.ws.odm.nigo.model.NIGOList.addItem(int,java.lang.String)#phrase.action = add NIGO item to {this} with {0} and message {1}
+com.ws.odm.nigo.model.NIGOList.items#phrase.action = set the items of {this} to {item}
+com.ws.odm.nigo.model.NIGOList.items#phrase.navigation = {item} of {this}
+com.ws.odm.nigo.model.NIGOList.print()#phrase.action = print {this}
+
+# com.ws.odm.nigo.model.Section
+com.ws.odm.nigo.model.Section#concept.label = section
+com.ws.odm.nigo.model.Section.fields#phrase.action = set the fields of {this} to {field}
+com.ws.odm.nigo.model.Section.fields#phrase.navigation = {field} of {this}
+
+# com.ws.odm.nigo.model.ValidationItem
+com.ws.odm.nigo.model.ValidationItem#concept.label = validation item
+com.ws.odm.nigo.model.ValidationItem.dateValue()#phrase.navigation = the date value of {this}
+com.ws.odm.nigo.model.ValidationItem.id#phrase.action = set the unique id of {this} to {unique id}
+com.ws.odm.nigo.model.ValidationItem.id#phrase.navigation = {unique id} of {this}
+com.ws.odm.nigo.model.ValidationItem.integerValue()#phrase.navigation = the integer value of {this}
+com.ws.odm.nigo.model.ValidationItem.nigoId#phrase.action = set the NIGO id of {this} to {NIGO id}
+com.ws.odm.nigo.model.ValidationItem.nigoId#phrase.navigation = {NIGO id} of {this}
+com.ws.odm.nigo.model.ValidationItem.value#phrase.action = set the field value of {this} to {field value}
+com.ws.odm.nigo.model.ValidationItem.value#phrase.navigation = {field value} of {this}
+
+# com.ws.odm.nigo.model.ValidationList
+com.ws.odm.nigo.model.ValidationList#concept.label = validation list
+com.ws.odm.nigo.model.ValidationList.addItemVirtual(com.ws.odm.nigo.model.Form,java.lang.String,java.lang.String,com.ws.odm.nigo.type.NIGO,int)#phrase.action = add validation to {this} with form {0}, section {1}, field {2}, NIGO {3}, unique id {4}
+com.ws.odm.nigo.model.ValidationList.items#phrase.action = set the items of {this} to {item}
+com.ws.odm.nigo.model.ValidationList.items#phrase.navigation = {item} of {this}
+
+# com.ws.odm.nigo.type.NIGO
+com.ws.odm.nigo.type.NIGO#concept.label = com.ws.odm.nigo.type.NIGO
+com.ws.odm.nigo.type.NIGO.aba_invalid#instance.documentation = aba_invalid
+com.ws.odm.nigo.type.NIGO.aba_invalid#instance.label = aba_invalid
+com.ws.odm.nigo.type.NIGO.age_72#instance.documentation = Age 72
+com.ws.odm.nigo.type.NIGO.age_72#instance.label = Age 72
+com.ws.odm.nigo.type.NIGO.agent_split_100#instance.documentation = agent_split_100
+com.ws.odm.nigo.type.NIGO.agent_split_100#instance.label = agent_split_100
+com.ws.odm.nigo.type.NIGO.blank#instance.documentation = blank
+com.ws.odm.nigo.type.NIGO.blank#instance.label = blank
+com.ws.odm.nigo.type.NIGO.choice1#instance.documentation = choice1
+com.ws.odm.nigo.type.NIGO.choice1#instance.label = choice1
+com.ws.odm.nigo.type.NIGO.choice2#instance.documentation = choice2
+com.ws.odm.nigo.type.NIGO.choice2#instance.label = choice2
+com.ws.odm.nigo.type.NIGO.cont_alloc_perc_100#instance.documentation = cont_alloc_perc_100
+com.ws.odm.nigo.type.NIGO.cont_alloc_perc_100#instance.label = cont_alloc_perc_100
+com.ws.odm.nigo.type.NIGO.cont_limit_65k#instance.documentation = cont_limit_65k
+com.ws.odm.nigo.type.NIGO.cont_limit_65k#instance.label = cont_limit_65k
+com.ws.odm.nigo.type.NIGO.date_14_27#instance.documentation = Not on 14th or 27th
+com.ws.odm.nigo.type.NIGO.date_14_27#instance.label = Not on 14th or 27th
+com.ws.odm.nigo.type.NIGO.do_not_select#instance.documentation = do_not_select
+com.ws.odm.nigo.type.NIGO.do_not_select#instance.label = do_not_select
+com.ws.odm.nigo.type.NIGO.empty#instance.documentation = Empty
+com.ws.odm.nigo.type.NIGO.empty#instance.label = Empty
+com.ws.odm.nigo.type.NIGO.end_of_month#instance.documentation = end_of_month
+com.ws.odm.nigo.type.NIGO.end_of_month#instance.label = end_of_month
+com.ws.odm.nigo.type.NIGO.entity_owner_sole_primary#instance.documentation = entity_owner_sole_primary
+com.ws.odm.nigo.type.NIGO.entity_owner_sole_primary#instance.label = entity_owner_sole_primary
+com.ws.odm.nigo.type.NIGO.form_incomplete#instance.documentation = form_incomplete
+com.ws.odm.nigo.type.NIGO.form_incomplete#instance.label = form_incomplete
+com.ws.odm.nigo.type.NIGO.illegible#instance.documentation = illegible
+com.ws.odm.nigo.type.NIGO.illegible#instance.label = illegible
+com.ws.odm.nigo.type.NIGO.invalid_glwb#instance.documentation = invalid_glwb
+com.ws.odm.nigo.type.NIGO.invalid_glwb#instance.label = invalid_glwb
+com.ws.odm.nigo.type.NIGO.invalid_state#instance.documentation = invalid_state
+com.ws.odm.nigo.type.NIGO.invalid_state#instance.label = invalid_state
+com.ws.odm.nigo.type.NIGO.irs_catch_cont_limt#instance.documentation = irs_catch_cont_limt
+com.ws.odm.nigo.type.NIGO.irs_catch_cont_limt#instance.label = irs_catch_cont_limt
+com.ws.odm.nigo.type.NIGO.irs_cont_limit#instance.documentation = IRS Contribution Limit
+com.ws.odm.nigo.type.NIGO.irs_cont_limit#instance.label = IRS Contribution Limit
+com.ws.odm.nigo.type.NIGO.match_client#instance.documentation = match_client
+com.ws.odm.nigo.type.NIGO.match_client#instance.label = match_client
+com.ws.odm.nigo.type.NIGO.match_eo#instance.documentation = match_eo
+com.ws.odm.nigo.type.NIGO.match_eo#instance.label = match_eo
+com.ws.odm.nigo.type.NIGO.mr_age_range#instance.documentation = mr_age_range
+com.ws.odm.nigo.type.NIGO.mr_age_range#instance.label = mr_age_range
+com.ws.odm.nigo.type.NIGO.mr_age_range_mr_ok#instance.documentation = mr_age_range_mr_ok
+com.ws.odm.nigo.type.NIGO.mr_age_range_mr_ok#instance.label = mr_age_range_mr_ok
+com.ws.odm.nigo.type.NIGO.must_be_entity#instance.documentation = must_be_entity
+com.ws.odm.nigo.type.NIGO.must_be_entity#instance.label = must_be_entity
+com.ws.odm.nigo.type.NIGO.must_be_swd#instance.documentation = must_be_swd
+com.ws.odm.nigo.type.NIGO.must_be_swd#instance.label = must_be_swd
+com.ws.odm.nigo.type.NIGO.no_self_ann_not_own#instance.documentation = no_self_ann_not_own
+com.ws.odm.nigo.type.NIGO.no_self_ann_not_own#instance.label = no_self_ann_not_own
+com.ws.odm.nigo.type.NIGO.nonqual_0_75#instance.documentation = nonqual_0_75
+com.ws.odm.nigo.type.NIGO.nonqual_0_75#instance.label = nonqual_0_75
+com.ws.odm.nigo.type.NIGO.nonqual_76_89#instance.documentation = nonqual_76_89
+com.ws.odm.nigo.type.NIGO.nonqual_76_89#instance.label = nonqual_76_89
+com.ws.odm.nigo.type.NIGO.not_14_27_index#instance.documentation = not_14_27_index
+com.ws.odm.nigo.type.NIGO.not_14_27_index#instance.label = not_14_27_index
+com.ws.odm.nigo.type.NIGO.not_valid#instance.documentation = not_valid
+com.ws.odm.nigo.type.NIGO.not_valid#instance.label = not_valid
+com.ws.odm.nigo.type.NIGO.not_valid_with_swd#instance.documentation = not_valid_with_swd
+com.ws.odm.nigo.type.NIGO.not_valid_with_swd#instance.label = not_valid_with_swd
+com.ws.odm.nigo.type.NIGO.o_match_a#instance.documentation = o_match_a
+com.ws.odm.nigo.type.NIGO.o_match_a#instance.label = o_match_a
+com.ws.odm.nigo.type.NIGO.one_field_req#instance.documentation = one_field_req
+com.ws.odm.nigo.type.NIGO.one_field_req#instance.label = one_field_req
+com.ws.odm.nigo.type.NIGO.one_pt_req#instance.documentation = one_pt_req
+com.ws.odm.nigo.type.NIGO.one_pt_req#instance.label = one_pt_req
+com.ws.odm.nigo.type.NIGO.only_one#instance.documentation = only_one
+com.ws.odm.nigo.type.NIGO.only_one#instance.label = only_one
+com.ws.odm.nigo.type.NIGO.own_must_be_ann_4_plan#instance.documentation = own_must_be_ann_4_plan
+com.ws.odm.nigo.type.NIGO.own_must_be_ann_4_plan#instance.label = own_must_be_ann_4_plan
+com.ws.odm.nigo.type.NIGO.p_alloc_perc_100#instance.documentation = p_alloc_perc_100
+com.ws.odm.nigo.type.NIGO.p_alloc_perc_100#instance.label = p_alloc_perc_100
+com.ws.odm.nigo.type.NIGO.plan_type#instance.documentation = plan_type
+com.ws.odm.nigo.type.NIGO.plan_type#instance.label = plan_type
+com.ws.odm.nigo.type.NIGO.pobox#instance.documentation = PO Box not allowed
+com.ws.odm.nigo.type.NIGO.pobox#instance.label = PO Box not allowed
+com.ws.odm.nigo.type.NIGO.prev_cont_after_tax_day#instance.documentation = prev_cont_after_tax_day
+com.ws.odm.nigo.type.NIGO.prev_cont_after_tax_day#instance.label = prev_cont_after_tax_day
+com.ws.odm.nigo.type.NIGO.q_plan_no_joint_o#instance.documentation = q_plan_no_joint_o
+com.ws.odm.nigo.type.NIGO.q_plan_no_joint_o#instance.label = q_plan_no_joint_o
+com.ws.odm.nigo.type.NIGO.qual_0_75#instance.documentation = qual_0_75
+com.ws.odm.nigo.type.NIGO.qual_0_75#instance.label = qual_0_75
+com.ws.odm.nigo.type.NIGO.qual_76_89#instance.documentation = qual_76_89
+com.ws.odm.nigo.type.NIGO.qual_76_89#instance.label = qual_76_89
+com.ws.odm.nigo.type.NIGO.rate_options_total_100#instance.documentation = rate_options_total_100
+com.ws.odm.nigo.type.NIGO.rate_options_total_100#instance.label = rate_options_total_100
+com.ws.odm.nigo.type.NIGO.rel_not_self_ind_own#instance.documentation = rel_not_self_ind_own
+com.ws.odm.nigo.type.NIGO.rel_not_self_ind_own#instance.label = rel_not_self_ind_own
+com.ws.odm.nigo.type.NIGO.required#instance.documentation = Required Field
+com.ws.odm.nigo.type.NIGO.required#instance.label = Required Field
+com.ws.odm.nigo.type.NIGO.select_1_opt#instance.documentation = select_1_opt
+com.ws.odm.nigo.type.NIGO.select_1_opt#instance.label = select_1_opt
+com.ws.odm.nigo.type.NIGO.self_4_eo#instance.documentation = self_4_eo
+com.ws.odm.nigo.type.NIGO.self_4_eo#instance.label = self_4_eo
+com.ws.odm.nigo.type.NIGO.spouse_10_younger#instance.documentation = spouse_10_younger
+com.ws.odm.nigo.type.NIGO.spouse_10_younger#instance.label = spouse_10_younger
+com.ws.odm.nigo.type.NIGO.start_app_plus_30#instance.documentation = start_app_plus_30
+com.ws.odm.nigo.type.NIGO.start_app_plus_30#instance.label = start_app_plus_30
+com.ws.odm.nigo.type.NIGO.unavailable#instance.documentation = unavailable
+com.ws.odm.nigo.type.NIGO.unavailable#instance.label = unavailable
+com.ws.odm.nigo.type.NIGO.val_SSN#instance.documentation = val_SSN
+com.ws.odm.nigo.type.NIGO.val_SSN#instance.label = val_SSN
+com.ws.odm.nigo.type.NIGO.val_date#instance.documentation = val_date
+com.ws.odm.nigo.type.NIGO.val_date#instance.label = val_date
+com.ws.odm.nigo.type.NIGO.val_numeric#instance.documentation = Numeric Value
+com.ws.odm.nigo.type.NIGO.val_numeric#instance.label = Numeric Value
+com.ws.odm.nigo.type.NIGO.val_zip#instance.documentation = ZIP Code
+com.ws.odm.nigo.type.NIGO.val_zip#instance.label = ZIP Code
+
+# com.ws.odm.nigo.validation.Helper
+com.ws.odm.nigo.validation.Helper#concept.label = helper
+com.ws.odm.nigo.validation.Helper.asDate(java.lang.String)#phrase.navigation = the date from {0}
+com.ws.odm.nigo.validation.Helper.asInteger(java.lang.String)#phrase.navigation = the integer from {0}
+com.ws.odm.nigo.validation.Helper.getDay(java.util.Date)#phrase.navigation = the day of {0}
+com.ws.odm.nigo.validation.Helper.isInteger(java.lang.String)#phrase.navigation = {0} is an integer
+com.ws.odm.nigo.validation.Helper.isNumber(java.lang.String)#phrase.navigation = {0} is a number

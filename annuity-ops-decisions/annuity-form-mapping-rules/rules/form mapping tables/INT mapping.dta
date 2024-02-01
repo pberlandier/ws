@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.dt:DecisionTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.dt="http://ilog.rules.studio/model/dt.ecore">
+  <name>INT mapping</name>
+  <uuid>088d0d8d-7e97-4663-92e8-71f96c419398</uuid>
+  <locale>en_US</locale>
+  <definition>
+<DT Version="7.0" xmlns="http://schemas.ilog.com/Rules/7.0/DecisionTable">
+  <Body>
+    <Structure>
+      <ConditionDefinitions>
+        <ConditionDefinition Id="C2">
+          <Properties>
+            <Property Name="Check.Gap" Type="xs:boolean"><![CDATA[false]]></Property>
+            <Property Name="Check.Overlap" Type="xs:boolean"><![CDATA[false]]></Property>
+          </Properties>
+          <ExpressionDefinition>
+            <Text><![CDATA[the INT of cbu  is one of <INTTypes>]]></Text>
+          </ExpressionDefinition>
+        </ConditionDefinition>
+        <ConditionDefinition Id="C4">
+          <ExpressionDefinition>
+            <Text><![CDATA[state is one of <state types>]]></Text>
+          </ExpressionDefinition>
+        </ConditionDefinition>
+      </ConditionDefinitions>
+      <ActionDefinitions>
+        <ActionDefinition Id="A0">
+          <ExpressionDefinition>
+            <Text><![CDATA[forms.addElement( <a string> , <a string> , <a string> , <a string> )]]></Text>
+          </ExpressionDefinition>
+        </ActionDefinition>
+      </ActionDefinitions>
+    </Structure>
+    <Contents>
+      <Partition DefId="C2">
+        <Condition>
+          <Expression>
+            <Param><![CDATA[{ IX }]]></Param>
+          </Expression>
+          <Partition DefId="C4">
+            <Condition>
+              <Expression>
+                <Text><![CDATA[<an object> is not one of <objects>]]></Text>
+                <Param><![CDATA[{ CA,CT,DC,DE,FL,GU,ND,NY,PR,SD }]]></Param>
+              </Expression>
+              <ActionSet>
+                <Action DefId="A0">
+                  <Expression>
+                    <Param><![CDATA["ICC14-IL-90-31000-1610"]]></Param>
+                    <Param><![CDATA["Indextra App"]]></Param>
+                    <Param><![CDATA["Indextra App"]]></Param>
+                    <Param><![CDATA["ICC16-IL-90-31000-1701"]]></Param>
+                  </Expression>
+                </Action>
+              </ActionSet>
+            </Condition>
+          </Partition>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA[{ IX }]]></Param>
+          </Expression>
+          <Partition DefId="C4">
+            <Condition>
+              <Expression>
+                <Param><![CDATA[{ CA,DC,DE,FL,ND,SD }]]></Param>
+              </Expression>
+              <ActionSet>
+                <Action DefId="A0">
+                  <Expression>
+                    <Param><![CDATA["ICC14-IL-90-31000-1610"]]></Param>
+                    <Param><![CDATA["Indextra App"]]></Param>
+                    <Param><![CDATA["Indextra App"]]></Param>
+                    <Param><![CDATA["IL-90-31000-1701"]]></Param>
+                  </Expression>
+                </Action>
+              </ActionSet>
+            </Condition>
+          </Partition>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA[{ IX }]]></Param>
+          </Expression>
+          <Partition DefId="C4">
+            <Condition>
+              <Expression>
+                <Param><![CDATA[{ CT }]]></Param>
+              </Expression>
+              <ActionSet>
+                <Action DefId="A0">
+                  <Expression>
+                    <Param><![CDATA["ICC14-IL-90-31000-1610"]]></Param>
+                    <Param><![CDATA["Indextra App"]]></Param>
+                    <Param><![CDATA["Indextra App"]]></Param>
+                    <Param><![CDATA["IL-90-31000-CT-1701"]]></Param>
+                  </Expression>
+                </Action>
+              </ActionSet>
+            </Condition>
+          </Partition>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA[{ IX }]]></Param>
+          </Expression>
+          <Partition DefId="C4">
+            <Condition>
+              <Expression>
+                <Text><![CDATA[<an object> is not one of <objects>]]></Text>
+                <Param><![CDATA[{ CA,DE,FL,GU,ND,NY,PR,SD }]]></Param>
+              </Expression>
+              <ActionSet>
+                <Action DefId="A0">
+                  <Expression>
+                    <Param><![CDATA["ICC14-IL-90-31000-1610"]]></Param>
+                    <Param><![CDATA["Indextra App"]]></Param>
+                    <Param><![CDATA["Indextra App"]]></Param>
+                    <Param><![CDATA["ICC20-IL-90-31000-2002"]]></Param>
+                  </Expression>
+                </Action>
+              </ActionSet>
+            </Condition>
+          </Partition>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA[{ IX }]]></Param>
+          </Expression>
+          <Partition DefId="C4">
+            <Condition>
+              <Expression>
+                <Param><![CDATA[{ FL }]]></Param>
+              </Expression>
+              <ActionSet>
+                <Action DefId="A0">
+                  <Expression>
+                    <Param><![CDATA["ICC14-IL-90-31000-1610"]]></Param>
+                    <Param><![CDATA["Indextra App"]]></Param>
+                    <Param><![CDATA["Indextra App"]]></Param>
+                    <Param><![CDATA["IL-90-31000 FL-2002"]]></Param>
+                  </Expression>
+                </Action>
+              </ActionSet>
+            </Condition>
+          </Partition>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA[{ IX }]]></Param>
+          </Expression>
+          <Partition DefId="C4">
+            <Condition>
+              <Expression>
+                <Param><![CDATA[{ CA,DE,ND,SD }]]></Param>
+              </Expression>
+              <ActionSet>
+                <Action DefId="A0">
+                  <Expression>
+                    <Param><![CDATA["ICC14-IL-90-31000-1610"]]></Param>
+                    <Param><![CDATA["Indextra App"]]></Param>
+                    <Param><![CDATA["Indextra App"]]></Param>
+                    <Param><![CDATA["IL-90-31000-2002"]]></Param>
+                  </Expression>
+                </Action>
+              </ActionSet>
+            </Condition>
+          </Partition>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA[{ JM }]]></Param>
+          </Expression>
+          <Partition DefId="C4">
+            <Condition>
+              <Expression>
+                <Text><![CDATA[<an object> is not one of <objects>]]></Text>
+                <Param><![CDATA[{ CA , DE , FL , NY , ND , SD , GU , PR }]]></Param>
+              </Expression>
+              <ActionSet>
+                <Action DefId="A0">
+                  <Expression>
+                    <Param><![CDATA["CF-91-31001"]]></Param>
+                    <Param><![CDATA["JourneyMark App"]]></Param>
+                    <Param><![CDATA["JourneyMark App"]]></Param>
+                    <Param><![CDATA["ICC20-CF-91-31001-2102"]]></Param>
+                  </Expression>
+                </Action>
+              </ActionSet>
+            </Condition>
+          </Partition>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA[{ JM }]]></Param>
+          </Expression>
+          <Partition DefId="C4">
+            <Condition>
+              <Expression>
+                <Text><![CDATA[<an object> is not one of <objects>]]></Text>
+                <Param><![CDATA[{ CA , DE , FL , NY , ND , SD , GU , PR }]]></Param>
+              </Expression>
+              <ActionSet>
+                <Action DefId="A0">
+                  <Expression>
+                    <Param><![CDATA["CF-91-31001"]]></Param>
+                    <Param><![CDATA["JourneyMark App"]]></Param>
+                    <Param><![CDATA["JourneyMark App"]]></Param>
+                    <Param><![CDATA["ICC20-CF-91-31001-7Y-2102"]]></Param>
+                  </Expression>
+                </Action>
+              </ActionSet>
+            </Condition>
+          </Partition>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA[{ JM }]]></Param>
+          </Expression>
+          <Partition DefId="C4">
+            <Condition>
+              <Expression>
+                <Text><![CDATA[<an object> is not one of <objects>]]></Text>
+                <Param><![CDATA[{ CA , DE , FL , NY , ND , SD , GU , PR }]]></Param>
+              </Expression>
+              <ActionSet>
+                <Action DefId="A0">
+                  <Expression>
+                    <Param><![CDATA["CF-91-31001"]]></Param>
+                    <Param><![CDATA["JourneyMark App"]]></Param>
+                    <Param><![CDATA[" JourneyMark App"]]></Param>
+                    <Param><![CDATA["ICC20-CF-91-31001-5Y-2102"]]></Param>
+                  </Expression>
+                </Action>
+              </ActionSet>
+            </Condition>
+          </Partition>
+        </Condition>
+      </Partition>
+    </Contents>
+  </Body>
+  <Resources DefaultLocale="en_US">
+    <ResourceSet Locale="en_US">
+      <Data Name="Definitions(A0)#HeaderText"><![CDATA[Form]]></Data>
+      <Data Name="Definitions(A0)#Width"><![CDATA[871]]></Data>
+      <Data Name="Definitions(A0)[0]#HeaderText"><![CDATA[Index Form Id]]></Data>
+      <Data Name="Definitions(A0)[1]#HeaderText"><![CDATA[Consolidated Form Name]]></Data>
+      <Data Name="Definitions(A0)[2]#HeaderText"><![CDATA[Form Name]]></Data>
+      <Data Name="Definitions(A0)[3]#HeaderText"><![CDATA[Paper Form Id]]></Data>
+      <Data Name="Definitions(C2)#HeaderText"><![CDATA[INT]]></Data>
+      <Data Name="Definitions(C2)#Width"><![CDATA[420]]></Data>
+      <Data Name="Definitions(C4)#HeaderText"><![CDATA[State]]></Data>
+      <Data Name="Definitions(C4)#Width"><![CDATA[588]]></Data>
+    </ResourceSet>
+  </Resources>
+</DT>
+</definition>
+</ilog.rules.studio.model.dt:DecisionTable>

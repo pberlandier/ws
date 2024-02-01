@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>parameters</name>
+  <uuid>0bdc3826-1604-43d3-89e1-d93b7161e0bc</uuid>
+  <variables name="form" type="com.ws.odm.nigo.model.Form" initialValue="" verbalization="form"/>
+  <variables name="response" type="com.ws.odm.nigo.model.NIGOList" initialValue="new com.ws.odm.nigo.model.NIGOList()" verbalization="response"/>
+</ilog.rules.studio.model.base:VariableSet>

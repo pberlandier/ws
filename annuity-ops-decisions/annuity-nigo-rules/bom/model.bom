@@ -1,0 +1,209 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/annuity-nigo-rules//annuity-ops-xom"
+property uuid "56ef8140-7d8c-4eba-a37a-beab5eac8194"
+package com.ws.odm.nigo.model;
+
+
+public class Field
+{
+    public string id;
+    public string sectionId;
+    public string value;
+    public Field();
+}
+
+public class Form
+{
+    public java.util.List fields domain 0,* class com.ws.odm.nigo.model.Field;
+    public string id;
+    public java.util.Hashtable sections
+                property "factory.ignore" "true";
+    public Form(string id, 
+        java.util.List fields domain 0,* class com.ws.odm.nigo.model.Field)
+                property "dataio.default" "true";
+    public Form();
+    public string getFieldValue(string arg1, string arg2);
+}
+
+public class NIGOItem
+{
+    public int id;
+    public string messageText;
+    public NIGOItem();
+}
+
+public class NIGOList
+{
+    public java.util.List items domain 0,* class com.ws.odm.nigo.model.NIGOItem;
+    public NIGOList();
+    public void addItem(int arg1, string arg2);
+    public void print();
+}
+
+public class Section
+{
+    public java.util.Hashtable fields;
+    public Section();
+    public void addField(string arg1, string arg2);
+}
+
+public class ValidationItem
+{
+    public int id;
+    public string nigoId;
+    public string value;
+    public ValidationItem();
+    public java.util.Date dateValue();
+    public int integerValue();
+}
+
+public class ValidationList
+{
+    public java.util.List items domain 0,* class com.ws.odm.nigo.model.ValidationItem;
+    public ValidationList();
+    public void addItem(com.ws.odm.nigo.model.Form arg1, string arg2, string arg3, string arg4, int arg5);
+    public void addItemVirtual(com.ws.odm.nigo.model.Form form, string sectionId, string fieldId, com.ws.odm.nigo.type.NIGO nigoId, int uniqueId);
+}
+
+package com.ws.odm.nigo.type;
+
+
+public class NIGO
+        property "com.ibm.rules.domainProvider.msexcel.b2xColumn" "1"
+        property "com.ibm.rules.domainProvider.msexcel.documentationColumn.en" "2"
+        property "com.ibm.rules.domainProvider.msexcel.hasHeader" "true"
+        property "com.ibm.rules.domainProvider.msexcel.labelColumn.en" "2"
+        property "com.ibm.rules.domainProvider.msexcel.sheetIndex" "0"
+        property "com.ibm.rules.domainProvider.msexcel.valueColumn" "0"
+        property domainProviderResource "domains.xlsx"
+        property domainValueProviderName "com.ibm.rules.domainProvider.msexcel2007"
+{
+    domain 
+    {
+        static required,
+        static blank,
+        static val_date,
+        static spouse_10_younger,
+        static val_SSN,
+        static not_valid,
+        static invalid_glwb,
+        static end_of_month,
+        static start_app_plus_30,
+        static not_14_27_index,
+        static age_72,
+        static not_valid_with_swd,
+        static must_be_swd,
+        static aba_invalid,
+        static val_numeric,
+        static unavailable,
+        static pobox,
+        static val_zip,
+        static empty,
+        static mr_age_range_mr_ok,
+        static mr_age_range,
+        static illegible,
+        static o_match_a,
+        static no_self_ann_not_own,
+        static match_eo,
+        static rel_not_self_ind_own,
+        static cont_alloc_perc_100,
+        static p_alloc_perc_100,
+        static self_4_eo,
+        static entity_owner_sole_primary,
+        static plan_type,
+        static q_plan_no_joint_o,
+        static own_must_be_ann_4_plan,
+        static only_one,
+        static form_incomplete,
+        static must_be_entity,
+        static one_pt_req,
+        static one_field_req,
+        static cont_limit_65k,
+        static irs_catch_cont_limt,
+        static irs_cont_limit,
+        static prev_cont_after_tax_day,
+        static choice1,
+        static choice2,
+        static qual_0_75,
+        static nonqual_0_75,
+        static qual_76_89,
+        static nonqual_76_89,
+        static select_1_opt,
+        static do_not_select,
+        static rate_options_total_100,
+        static invalid_state,
+        static agent_split_100,
+        static match_client,
+        static date_14_27
+    }
+    public static final readonly com.ws.odm.nigo.type.NIGO aba_invalid;
+    public static final readonly com.ws.odm.nigo.type.NIGO age_72;
+    public static final readonly com.ws.odm.nigo.type.NIGO agent_split_100;
+    public static final readonly com.ws.odm.nigo.type.NIGO blank;
+    public static final readonly com.ws.odm.nigo.type.NIGO choice1;
+    public static final readonly com.ws.odm.nigo.type.NIGO choice2;
+    public static final readonly com.ws.odm.nigo.type.NIGO cont_alloc_perc_100;
+    public static final readonly com.ws.odm.nigo.type.NIGO cont_limit_65k;
+    public static final readonly com.ws.odm.nigo.type.NIGO date_14_27;
+    public static final readonly com.ws.odm.nigo.type.NIGO do_not_select;
+    public static final readonly com.ws.odm.nigo.type.NIGO empty;
+    public static final readonly com.ws.odm.nigo.type.NIGO end_of_month;
+    public static final readonly com.ws.odm.nigo.type.NIGO entity_owner_sole_primary;
+    public static final readonly com.ws.odm.nigo.type.NIGO form_incomplete;
+    public static final readonly com.ws.odm.nigo.type.NIGO illegible;
+    public static final readonly com.ws.odm.nigo.type.NIGO invalid_glwb;
+    public static final readonly com.ws.odm.nigo.type.NIGO invalid_state;
+    public static final readonly com.ws.odm.nigo.type.NIGO irs_catch_cont_limt;
+    public static final readonly com.ws.odm.nigo.type.NIGO irs_cont_limit;
+    public static final readonly com.ws.odm.nigo.type.NIGO match_client;
+    public static final readonly com.ws.odm.nigo.type.NIGO match_eo;
+    public static final readonly com.ws.odm.nigo.type.NIGO mr_age_range;
+    public static final readonly com.ws.odm.nigo.type.NIGO mr_age_range_mr_ok;
+    public static final readonly com.ws.odm.nigo.type.NIGO must_be_entity;
+    public static final readonly com.ws.odm.nigo.type.NIGO must_be_swd;
+    public static final readonly com.ws.odm.nigo.type.NIGO no_self_ann_not_own;
+    public static final readonly com.ws.odm.nigo.type.NIGO nonqual_0_75;
+    public static final readonly com.ws.odm.nigo.type.NIGO nonqual_76_89;
+    public static final readonly com.ws.odm.nigo.type.NIGO not_14_27_index;
+    public static final readonly com.ws.odm.nigo.type.NIGO not_valid;
+    public static final readonly com.ws.odm.nigo.type.NIGO not_valid_with_swd;
+    public static final readonly com.ws.odm.nigo.type.NIGO o_match_a;
+    public static final readonly com.ws.odm.nigo.type.NIGO one_field_req;
+    public static final readonly com.ws.odm.nigo.type.NIGO one_pt_req;
+    public static final readonly com.ws.odm.nigo.type.NIGO only_one;
+    public static final readonly com.ws.odm.nigo.type.NIGO own_must_be_ann_4_plan;
+    public static final readonly com.ws.odm.nigo.type.NIGO p_alloc_perc_100;
+    public static final readonly com.ws.odm.nigo.type.NIGO plan_type;
+    public static final readonly com.ws.odm.nigo.type.NIGO pobox;
+    public static final readonly com.ws.odm.nigo.type.NIGO prev_cont_after_tax_day;
+    public static final readonly com.ws.odm.nigo.type.NIGO q_plan_no_joint_o;
+    public static final readonly com.ws.odm.nigo.type.NIGO qual_0_75;
+    public static final readonly com.ws.odm.nigo.type.NIGO qual_76_89;
+    public static final readonly com.ws.odm.nigo.type.NIGO rate_options_total_100;
+    public static final readonly com.ws.odm.nigo.type.NIGO rel_not_self_ind_own;
+    public static final readonly com.ws.odm.nigo.type.NIGO required;
+    public static final readonly com.ws.odm.nigo.type.NIGO select_1_opt;
+    public static final readonly com.ws.odm.nigo.type.NIGO self_4_eo;
+    public static final readonly com.ws.odm.nigo.type.NIGO spouse_10_younger;
+    public static final readonly com.ws.odm.nigo.type.NIGO start_app_plus_30;
+    public static final readonly com.ws.odm.nigo.type.NIGO unavailable;
+    public static final readonly com.ws.odm.nigo.type.NIGO val_SSN;
+    public static final readonly com.ws.odm.nigo.type.NIGO val_date;
+    public static final readonly com.ws.odm.nigo.type.NIGO val_numeric;
+    public static final readonly com.ws.odm.nigo.type.NIGO val_zip;
+}
+
+package com.ws.odm.nigo.validation;
+
+
+public class Helper
+{
+    public static java.util.Date asDate(string arg)
+                throws java.text.ParseException;
+    public static int asInteger(string arg);
+    public static int getDay(java.util.Date arg);
+    public static boolean isInteger(string arg);
+    public static boolean isNumber(string arg);
+}
+

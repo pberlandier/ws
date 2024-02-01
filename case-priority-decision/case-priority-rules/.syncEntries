@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<teamservers>
+<teamserver>
+<target dataSource="" login="odmAdmin" url="http://localhost:9090/decisioncenter"/>
+<entry baseType="B2XMapping" checksum="1834393479" projectName="case-priority-rules" qualifiedName="model" sourceCS="0F776DE26302DE4EFABCF10C03B58D61" targetCS="1834393479" type="B2XMapping" uuid="4fa77514-b75d-47c5-ba79-a87052db549c"/>
+<entry baseType="BRLRule" checksum="2220069045" projectName="case-priority-rules" qualifiedName="prioritization rules.transfers assessment" sourceCS="9A3351D8AA6B5FF301465F949E6246CF" targetCS="2220069045" type="BRLRule" uuid="b659ba4b-ca01-44af-9538-4b6e6ffef258"/>
+<entry baseType="BusinessObjectModel" checksum="3955420457" projectName="case-priority-rules" qualifiedName="model" sourceCS="919B31D3CD92EF15405BEC4EBC3F914E" targetCS="3955420457" type="BusinessObjectModel" uuid="36c6ac26-2724-4f7b-b880-a657b69bfb6f"/>
+<entry baseType="DecisionOperation" checksum="2172396840" projectName="case-priority-rules" qualifiedName="runPriorityEvaluation" sourceCS="E53B32D9E8813F6D90BC17B3151FDA69" targetCS="2172396840" type="DecisionOperation" uuid="3e662e63-d840-422e-8f10-8cccb6da9d07"/>
+<entry baseType="DecisionTable" checksum="3269784721" projectName="case-priority-rules" qualifiedName="prioritization rules.IGO assessment" sourceCS="1749D291263A725F80E88D578984273C" targetCS="3269784721" type="DecisionTable" uuid="24f289db-b388-4c7b-b51d-3263741dfb32"/>
+<entry baseType="DecisionTable" checksum="4288386686" projectName="case-priority-rules" qualifiedName="prioritization rules.product type assessment" sourceCS="96004C79D3EABEABD0A79D8F347A1DC1" targetCS="4288386686" type="DecisionTable" uuid="48bea4a1-85e5-4bb2-86e9-159fb41cf750"/>
+<entry baseType="DeploymentConfiguration" checksum="2757077832" projectName="case-priority-rules" qualifiedName="annuities" sourceCS="B2017557DCD366EAEA209F3C68FBE2B1" targetCS="2757077832" type="DeploymentConfiguration" uuid="4bb2a68e-e399-4ee4-8075-779e6f7c8808"/>
+<entry baseType="Resource" checksum="3088890984" projectName="case-priority-rules" qualifiedName="xom-libraries/case-priority-xom.zip" sourceCS="3536874576F50155172FE17AE944F849" targetCS="3088890984" type="Resource" uuid="xom-libraries/case-priority-xom.zip"/>
+<entry baseType="Ruleflow" checksum="377415990" projectName="case-priority-rules" qualifiedName="determine priority" sourceCS="E11FEF8D76283E7CA2AA9A35A67051B9" targetCS="377415990" type="Ruleflow" uuid="02be789f-07ed-43d3-a712-f054d15986a7"/>
+<entry baseType="RulePackageInfo" checksum="3228443004" projectName="case-priority-rules" qualifiedName="prioritization rules" sourceCS="0C73779B261DEE8634AD62C39527E7B2" targetCS="3228443004" type="RulePackageInfo" uuid="ddca84d7-328e-4f27-813a-e1693cb221b7"/>
+<entry baseType="RuleProjectInfo" checksum="1930899544" projectName="case-priority-rules" qualifiedName="case-priority-rules" sourceCS="DAED89F75F13281A7C6CBE89FF493193" targetCS="1930899544" type="RuleProjectInfo" uuid="d8864fb6-c59a-4e65-b44a-fa43d8003405"/>
+<entry baseType="VariableSet" checksum="2460299231" projectName="case-priority-rules" qualifiedName="parameters" sourceCS="E796CE7795A916CE8C13F7F0BEE8BB49" targetCS="2460299231" type="VariableSet" uuid="cc4fe9cb-8c21-45c1-8597-594fb1901160"/>
+<entry baseType="Vocabulary" checksum="3955420457" projectName="case-priority-rules" qualifiedName="model_en_US" sourceCS="01F653582F6A797639DEDAEC2F66FEDB" targetCS="3955420457" type="Vocabulary" uuid="5361706c-df77-4f7b-862d-293edd8ce263"/>
+</teamserver>
+</teamservers>

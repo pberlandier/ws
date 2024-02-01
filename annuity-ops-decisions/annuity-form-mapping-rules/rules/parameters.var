@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>parameters</name>
+  <uuid>466bacb9-d246-401c-9dc8-b7c3314916d5</uuid>
+  <variables name="cbu" type="com.ws.odm.mapping.InputCBU" initialValue="" verbalization="cbu"/>
+  <variables name="state" type="com.ws.odm.mapping.StateType" initialValue="" verbalization="state"/>
+  <variables name="forms" type="com.ws.odm.mapping.MappedForms" initialValue="new com.ws.odm.mapping.MappedForms()" verbalization="forms"/>
+</ilog.rules.studio.model.base:VariableSet>

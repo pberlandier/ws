@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="runNIGOValidation" usingRuleflow="true" ruleflowName="NIGO flow" targetRuleProjectName="annuity-nigo-rules">
+  <name>runNIGOValidation</name>
+  <uuid>b0fcdd79-5fc7-4ebf-beb8-753ba034aea7</uuid>
+  <referencedVariables variableName="form" variableSetName="parameters">
+    <variableSet href="../../../../../Western&amp;Southern/western-southern/annuity-ops-decisions/annuity-nigo-rules/rules/parameters.var#0bdc3826-1604-43d3-89e1-d93b7161e0bc"/>
+  </referencedVariables>
+  <referencedVariables variableName="response" variableSetName="parameters" direction="OUT">
+    <variableSet href="../../../../../Western&amp;Southern/western-southern/annuity-ops-decisions/annuity-nigo-rules/rules/parameters.var#0bdc3826-1604-43d3-89e1-d93b7161e0bc"/>
+  </referencedVariables>
+  <ruleflow href="../../../../../Western&amp;Southern/western-southern/annuity-ops-decisions/annuity-nigo-rules/rules/NIGO%20flow.rfl#bb6fd227-216e-4b8d-933e-a0dd92be6d37"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="runNIGOValidation_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../../../../Western&amp;Southern/western-southern/annuity-ops-decisions/annuity-nigo-rules#d879987f-aff5-4bf4-9ce9-0b04bd816352"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>
